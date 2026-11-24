@@ -1696,7 +1696,9 @@ namespace TShockAPI
 			PacketTypes.PasswordSend,
 			PacketTypes.ItemDrop,
 			PacketTypes.ItemOwner,
-			PacketTypes.SyncLoadout
+			PacketTypes.SyncLoadout,
+			PacketTypes.PlayerPlatformInfo,
+			PacketTypes.CustomServerAck
 		];
 
 		/// <summary>OnGetData - Called when the server gets raw data packets.</summary>
