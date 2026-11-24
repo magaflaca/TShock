@@ -23,6 +23,10 @@ namespace TShockAPI.Configuration
 		[Description("The port the server runs on.")]
 		public int ServerPort = 7777;
 
+		/// <summary>Whether the server tries to forward its port on the local router with UPnP. Not useful on hosted/VPS servers.</summary>
+		[Description("Whether the server tries to forward its port on the local router with UPnP.\nWhen it fails, Terraria 1.4.6 tells every player that port forwarding failed. Not useful on hosted/VPS servers.")]
+		public bool EnableUPnP = false;
+
 		/// <summary>Maximum number of clients connected at once. If lower than Terraria's setting, the server will kick excess connections.</summary>
 		[Description("Maximum number of clients connected at once.\nIf you want people to be kicked with \"Server is full\" set this to how many players you want max and then set Terraria max players to 2 higher.")]
 		public int MaxSlots = 8;

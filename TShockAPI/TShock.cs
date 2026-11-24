@@ -1905,6 +1905,7 @@ namespace TShockAPI
 			{
 				Netplay.ListenPort = file.Settings.ServerPort;
 			}
+			Netplay.UseUPNP = file.Settings.EnableUPnP;
 
 			if (file.Settings.MaxSlots > Main.maxPlayers - file.Settings.ReservedSlots)
 				file.Settings.MaxSlots = Main.maxPlayers - file.Settings.ReservedSlots;
