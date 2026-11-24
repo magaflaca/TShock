@@ -26,18 +26,8 @@
 		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		  <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
 		</None>
-		<None Include="..\prebuilts\OpenNAT.dll">
-		  <Link>OpenNAT.dll</Link>
-		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		  <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-		</None>
 		<None Include="..\prebuilts\native\win-x64\*">
 		  <Link>runtimes\win-x64\native\%(Filename)%(Extension)</Link>
-		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		  <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-		</None>
-		<None Include="..\prebuilts\native\linux-x64\*">
-		  <Link>runtimes\linux-x64\native\%(Filename)%(Extension)</Link>
 		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		  <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
 		</None>
@@ -59,6 +49,11 @@
 			<ExcludeFromSingleFile>true</ExcludeFromSingleFile>
 		</None>
 		<None Include="$(PkgOTAPI_Upcoming)\lib\net9.0\OTAPI.Runtime.dll">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+		</None>
+		<None Include="$(PkgOTAPI_Upcoming)\runtimes\**\native\*">
+			<Link>runtimes\%(RecursiveDir)%(Filename)%(Extension)</Link>
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 			<ExcludeFromSingleFile>true</ExcludeFromSingleFile>
 		</None>
