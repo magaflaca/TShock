@@ -284,6 +284,7 @@ namespace TShockAPI
 
 				TShockConfig.OnConfigRead += OnConfigRead;
 				FileTools.SetupConfig();
+				Netplay.UseUPNP = Config.Settings.EnableUPnP;
 
 				Main.ServerSideCharacter = ServerSideCharacterConfig.Settings.Enabled;
 
