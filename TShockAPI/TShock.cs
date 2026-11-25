@@ -1445,7 +1445,7 @@ namespace TShockAPI
 
 			if (tsplr.ReceivedInfo)
 			{
-				if (!tsplr.SilentKickInProgress && tsplr.State >= (int)ConnectionState.RequestingWorldData && tsplr.FinishedHandshake) //The player has left, do not broadcast any clients exploiting the behaviour of not spawning their player.
+				if (!tsplr.SilentKickInProgress && tsplr.FinishedHandshake) //The player has left, do not broadcast any clients exploiting the behaviour of not spawning their player.
 					Utils.Broadcast(GetString("{0} has left.", tsplr.Name), Color.Yellow);
 				Log.Info(GetString("{0} disconnected.", tsplr.Name));
 
